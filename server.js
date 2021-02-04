@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
 	    var url_parts = url.parse(req.url, true);
 	    var query = url_parts.query;
 
-	    var message = (query && query.message) ? query.message : 'Hello World';
+	    var message = (query && query.message) ? query.message : 'Hello, Thanks for talkinng to me...';
 	    var obj = {
 		            'message': message,
 		            'env': process.env
